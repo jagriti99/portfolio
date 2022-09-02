@@ -1,0 +1,17 @@
+body {
+    background-color: bisque;
+    font-size: 25px;
+    font-family:serif ;
+    
+}
+
+img { 
+width: 400px;
+height: 400px;
+}
+
+p{
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(241, 112, 133);
+}
