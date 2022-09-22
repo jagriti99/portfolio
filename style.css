@@ -4,14 +4,55 @@ body {
     font-family:serif ;
     
 }
+header{
+    background-image:url('https://st2.depositphotos.com/1670531/7667/i/450/depositphotos_76676573-stock-photo-top-view-desk-hero-header.jpg') ;
+    background-repeat: no-repeat;
+   background-size: cover;
+   font-family: 'Roboto', sans-serif;
+   
 
+}
+header li{
+    display: inline-block;
+   
+}
 img { 
 width: 400px;
 height: 400px;
+}
+nav ul{
+    list-style-type:none;
+   text-align: right;
+  
+  
+}
+ul li a{
+    display:block;
+   padding:10px;
+   color:white
 }
 
 p{
 font-size: 20px;
 font-family: Arial, Helvetica, sans-serif;
 color: rgb(241, 112, 133);
+}
+footer{
+    background-image: url('http://www.mattgorby.com/wp-content/uploads/2013/12/img-contact-me.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top:1rem;
+}
+form{
+   
+    text-align: center;
+}
+input{
+    padding:5px;
+    margin-top:5px;
+    margin-left:20px;
+    
+}
+label{
+    margin-left: 10px;
 }
