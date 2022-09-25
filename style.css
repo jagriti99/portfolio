@@ -5,7 +5,7 @@ body {
     
 }
 header{
-    background-image:url('https://st2.depositphotos.com/1670531/7667/i/450/depositphotos_76676573-stock-photo-top-view-desk-hero-header.jpg') ;
+    background-image:url('https://us.123rf.com/450wm/tirachard/tirachard1802/tirachard180200064/95656773-creative-flat-lay-photo-of-workspace-desk-top-view-office-desk-with-laptop-blank-empty-notebooks-and.jpg?ver=6') ;
     background-repeat: no-repeat;
    background-size: cover;
    font-family: 'Roboto', sans-serif;
@@ -15,6 +15,11 @@ header{
 header li{
     display: inline-block;
    
+}
+.logo{
+    display: block;
+    text-align: center;
+    
 }
 img { 
 width: 400px;
@@ -43,10 +48,7 @@ footer{
     text-align: center;
     margin-top:1rem;
 }
-form{
-   
-    text-align: center;
-}
+
 input{
     padding:5px;
     margin-top:5px;
@@ -55,4 +57,10 @@ input{
 }
 label{
     margin-left: 10px;
+}
+.form{
+    display:flex;
+}
+#contact{
+    flex:3;
 }
