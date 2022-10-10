@@ -1,52 +1,201 @@
-body {
-    background-color: bisque;
-    font-size: 25px;
-    font-family:serif ;
-    
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
 }
-header{
-    background-image:url('https://us.123rf.com/450wm/tirachard/tirachard1802/tirachard180200064/95656773-creative-flat-lay-photo-of-workspace-desk-top-view-office-desk-with-laptop-blank-empty-notebooks-and.jpg?ver=6') ;
-    background-repeat: no-repeat;
-   background-size: cover;
-   font-family: 'Roboto', sans-serif;
-   
-
+body, html{
+    height:100%;
+    scroll-behavior: smooth;
 }
-header li{
-    display: inline-block;
-   
+body{
+    margin:0px;
+    padding:0px;
+    background: rgb(240, 207, 207);
+    font-family: 'Roboto';
+    font-size: 12pt;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e,#f18fe1,#23d5ab);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50%{
+        background-position: 100% 50%;
+      }
+      100%{
+        background-position: 0% 50%;
+      } */
 }
-.logo{
+h1{
     display: block;
-    text-align: center;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    font-weight: bold;
+
+    /* position:absolute;
+    top:60%;
+    left:60%;
+    font-family: 'Roboto';
+    color:#000;
+    transform: translate(-60%,-60%); */
+}
+h2{
+    padding:5px;
+    margin: 10px;
+}
+/* ---header--- */
+header{
+    overflow:hidden;
+    background: url('https://i.pinimg.com/736x/16/c9/56/16c956c36e419ed13704d7c5e2b647fc.jpg') no-repeat fixed center center/cover;
+    /* object-fit: contain; */
+
+}
+#logo img{
+    width:4rem;
+    float: left;
+    padding:5px 5px;
+    height:4rem;
+    border-radius: 50%;
+}
+#top-header{
+    z-index:1;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
-img { 
-width: 400px;
-height: 400px;
-}
-nav ul{
-    list-style-type:none;
-   text-align: right;
-  
-  
-}
-ul li a{
-    display:block;
-   padding:10px;
-   color:white
+#logo{
+    float:left;
+    padding: none;
+    margin:none;
+    height:60px;
+    width:30%;
 }
 
+#header-image{
+    top:10px;
+    position:relative;
+    padding: 1rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #be31f2;
+    margin-left: 30rem;
+}
+
+
+#header-image img{
+    object-fit: cover;
+    width:100%;
+
+    height: 20vh;
+    margin:none;
+    padding:none;
+    display: block;
+    
+}
+
+
+ul{
+    text-align: center;
+    float:right;
+    margin: none;
+    
+}
+li{
+    display: inline-block;
+    padding: 0rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+li:hover{
+    background: rgb(241, 193, 193);
+    border-radius: 10px;
+}
+
+.welcome{
+    overflow: hidden;
+    width:1000px;
+    margin:0px auto
+}
+#section2{
+    overflow:hidden;
+    margin-top: 5rem;
+    padding-top: 1em;
+    text-align: center;
+}
 p{
+padding: 10px ;
 font-size: 20px;
 font-family: Arial, Helvetica, sans-serif;
 color: rgb(241, 112, 133);
 }
+.cards{
+    display:flex;
+}
+
+.card {
+    background-color: white;
+    margin:20px;
+    border-radius: 5px;
+    width:33%;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    /* object-fit: cover; */
+}
+.card h3,
+.card p,
+.card a{
+    padding:0 20px;
+    margin-bottom:20px;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 40px 0;
+    z-index:3;
+    border-color:#007bff;
+}
+
+@media (max-width:768px){
+    .card{
+        background-color: #333;
+        color:red;
+    }
+}
 footer{
-    background-image: url('http://www.mattgorby.com/wp-content/uploads/2013/12/img-contact-me.jpg');
-    background-repeat: no-repeat;
+    /* background-image: url('http://www.mattgorby.com/wp-content/uploads/2013/12/img-contact-me.jpg');
+    background-repeat: no-repeat; */
     text-align: center;
     margin-top:1rem;
+    display: flex;
+    flex:1;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e,#f18fe1,#23d5ab);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50%{
+        background-position: 100% 50%;
+      }
+      100%{
+        background-position: 0% 50%;
+      } */
 }
 
 input{
@@ -64,3 +213,51 @@ label{
 #contact{
     flex:3;
 }
+
+i{
+    font-size:3rem;
+}
+.container{
+    max-width: 1000px;
+    margin:0 auto;
+    
+    }
+    #skills{
+        min-height: 500px;
+    }
+    .skill{
+        background-color: rgb(247,247,247);
+        padding: 2rem;
+        border:1px solid gray;
+    
+    }
+    /* change the color of alternate box */
+    .skill:nth-child(odd){
+        background-color: rgba(245, 245, 200, 0.473);
+    }
+    .skills_group{
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+         justify-content: space-around; 
+        /* to give space around the box */ 
+        text-align: center;
+    }
+    
+    progress[value]{
+        height:1.5rem;
+        background:transparent;
+        -webkit-appearance: none;
+    }
+    /* below shows the progress bar empty space */
+    progress[value]::-webkit-progress-bar{
+        background-color: rgb(237, 109, 109);
+        border-radius: 5px;
+    }
+    /* below shows the progress in actual bar coral color */
+    progress[value]::-webkit-progress-value{
+        background-color: coral;
+        border-radius: 5px;
+        background-size: 35px 20px;
+    }
+    
