@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Portfolio</title>
+    
+</head>
+<body>
+    <header>
+        <div class="main_nav">
+          <div class="container">
+            <div class="logo">
+              <img src="./apple-touch-icon.png" alt="some image" />
+            </div>
+            <nav>
+              <button id="Burger">
+                <span class="material-icons"> mobile menu </span>
+              </button>
+              <ul>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#about">About Me </a></li>
+                <li><a href="./index.html#skills">Skills</a></li>
+                <li><a href="./gallery.html" target="_blank">Gallery </a></li>
+  
+                <li><a href="./index.html#footerlinks">Contact Me</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="hero_banner"><h2>Welcome to my portfolio</h2></div>
+      </header>
+  
+      <main>
+        <section id="gallery">
+          <h2>Gallery</h2>
+  
+          <div class="container">
+            <div class="gallery-group">
+              <div class="grid-item-1 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-1.jpeg"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="grid-item-2 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-2.webp"
+                  alt="Avatar"
+                />
+              </div>
+  
+              <div class="grid-item-3 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-3.jpeg"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="grid-item-4 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-4.webp"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="grid-item-5 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-5.webp"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="grid-item-6 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-6.jpeg"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="grid-item-7 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-7.jpeg"
+                  alt="Avatar"
+                />
+              </div>
+  
+              <div class="grid-item-8 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-8.jpeg"
+                  alt="Avatar"
+                />
+              </div>
+  
+              <div class="grid-item-9 grid-div">
+                <img
+                  class="grid-item"
+                  src="./nature-9.jpeg"
+                  alt="Avatar"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <form>
+          <h3>Contact Me</h3>
+          <div class="footerform">
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname" id="firstname" />
+          </div>
+          <div class="footerform">
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname" />
+          </div>
+          <div class="footerform">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="footerform">
+            <label for="tel">Phone number</label>
+            <input type="text" name="tel" id="tel" />
+          </div>
+          <button type="submit" name="button">Send message</button>
+        </form>
+      </footer>
+      <button
+        type="button"
+        onclick="backtotopFunction()"
+        id="topBtn"
+        title="Go to top"
+      >
+        <i class="fas fa-angle-up"></i>
+      </button>
+      <a>Copyright Jagriti's Website 2022</a>
+      <script src="script.js"></script>
+</body>
+</html>

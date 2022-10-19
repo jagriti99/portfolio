@@ -13,25 +13,27 @@
 </head>
 <body>
     <header>
-    <!-- <h1 class="logo">Jagriti Sharma</h1> -->
-    <div id="top-header">
-        <div id="logo">
-            <img src="./apple-touch-icon.png"/>
+        <div class="main_nav">
+          <div class="container">
+            <div class="logo">
+              <img src="./apple-touch-icon.png" alt="some image" />
+            </div>
+            <nav>
+              <button id="Burger">
+                <span class="material-icons"> mobile menu </span>
+              </button>
+              <ul>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#about">About Me </a></li>
+                <li><a href="./index.html#skills">Skills</a></li>
+                <li><a href="./gallery.html" target="_blank">Gallery </a></li>
+  
+                <li><a href="./index.html#footerlinks">Contact Me</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-   
-    <nav>
-        <ul>
-            <li><a href="./Index.html#projects">Projects</a></li>
-            <li><a href="./Index.html#aboutme">About Me</a></li>
-            <li><a href="./Index.html#skills">Skills</a></li>
-            <li><a href="./Index.html#form">Contact Me</a></li>
-        </ul>
-    </nav>
-    </div>
-    <div id ="header-image">
-        
-        <h1>Welcome to my portfolio</h2>
-    </div>
+        <div class="hero_banner"><h2>Welcome to my portfolio</h2></div>
 </header>
 
 <main>
@@ -78,24 +80,24 @@
 <section id="skills">
     <div class="container">
         <h2>Skills</h2>
-        <div class ="skills_group">
+            <div class ="skills_group">
+                <div class="skill">
+                <span class="material-icons"></span>
+                <p>HTML5</p>
+                <progress value="95" max="100"></progress>
+            </div>
         <div class="skill">
-            <i class="demo-icon icon-html5"></i>
-            <p>HTML5</p>
-            <progress value="95" max="100"></progress>
-        </div>
-        <div class="skill">
-            <i class="demo-icon icon-css3"></i>
+            <span class="material-icons"></span>
             <p>CSS3</p>
             <progress value="95" max="100"></progress>
         </div>
         <div class="skill">
-            <i class="demo-icon icon-html5"></i>
+            <span class="material-icons"></span>
             <p>JavaScript</p>
             <progress value="80" max="100"></progress>
         </div>
         <div class="skill">
-            <i class="demo-icon icon-html5"></i>
+            <span class="material-icons"></span>
             <p>UX/UI</p>
             <progress value="90" max="100"></progress>
         </div>
@@ -103,30 +105,38 @@
     </div>
 
 </section>
+</main>
     <footer>
-        <form id="form">
-            <h2>Let's connect</h2>
-            <div class="contact">
-                <div>
-                    <label for="your_name">Name</label>
-                <input type="text" id="your_name">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                </div>
-               
-            <div>
-                <label for="message" id="text-area">Message me</label>
-                <textarea name ="textarea" id="messages"></textarea>
-            </div>
-               
-           
-            <button type="submit">Send message</button>
+        <form>
+        <h3>Contact Me</h3>
+        <div class="footerform">
+          <label for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname" />
         </div>
-        </form>
-        <p>Copyright &copy; Jagriti Webpage 2022</p>
+        <div class="footerform">
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
+        <div class="footerform">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="footerform">
+          <label for="tel">Phone number</label>
+          <input type="text" name="tel" id="tel" />
+        </div>
+        <button type="submit" name="button">Send message</button>
+      </form>
     </footer>
-    
+    <button
+    type="button"
+    onclick="backtotopFunction()"
+    id="topBtn"
+    title="Go to top"
+  >
+    <i class="fas fa-angle-up"></i>
+  </button>
+  <a>Copyright @ Jagriti's Website 2022</a>
+    <script src="script.js"></script>
 </body>
 </html>
