@@ -4,7 +4,8 @@
     padding:0;
     text-decoration: none;
 }
-body, html{
+body, 
+html{
     height:100%;
     scroll-behavior: smooth;
 }
@@ -40,7 +41,9 @@ h2{
     display:block;
     padding:5px;
     margin: 10px;
+    position: relative;
 }
+
 h3{
     display: block;
     font-size: 1rem;
@@ -164,15 +167,6 @@ a {
     display: block;
     padding: 3rem;
   }
-
-
-
-
-
-
-
-
-
 
 .cards{
     display:flex;
@@ -431,6 +425,7 @@ footer{
   .material-icons {
     font-size: 1rem;
     margin-bottom: 3px;
+    color: black;
   }
 }
 
@@ -508,7 +503,7 @@ footer button {
   padding: 0.5rem;
 }
 
-.material-icons {
+/* .material-icons {
   font-size: 1rem;
   margin-bottom: 3px;
-}
+} */
